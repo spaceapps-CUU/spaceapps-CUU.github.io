@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/spaceapps-CUU.github.io.git/static/css/main.073c9b0a.css",
-    "main.js": "/spaceapps-CUU.github.io.git/static/js/main.667216e4.js",
-    "static/js/787.e174b6fd.chunk.js": "/spaceapps-CUU.github.io.git/static/js/787.e174b6fd.chunk.js",
-    "static/media/logo.svg": "/spaceapps-CUU.github.io.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/spaceapps-CUU.github.io.git/index.html",
-    "main.073c9b0a.css.map": "/spaceapps-CUU.github.io.git/static/css/main.073c9b0a.css.map",
-    "main.667216e4.js.map": "/spaceapps-CUU.github.io.git/static/js/main.667216e4.js.map",
-    "787.e174b6fd.chunk.js.map": "/spaceapps-CUU.github.io.git/static/js/787.e174b6fd.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.901683b7.js",
+    "static/js/787.e174b6fd.chunk.js": "/static/js/787.e174b6fd.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.901683b7.js.map": "/static/js/main.901683b7.js.map",
+    "787.e174b6fd.chunk.js.map": "/static/js/787.e174b6fd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.667216e4.js"
+    "static/js/main.901683b7.js"
   ]
 }
