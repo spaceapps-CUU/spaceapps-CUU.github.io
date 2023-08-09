@@ -7,6 +7,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+          Si se pudo banda :D
+          Ahora google es nuestro
+        </p>
+        <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
