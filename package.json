@@ -1,8 +1,8 @@
 {
   "name": "space_apps_cuu_webpage",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "http://spaceapps-CUU.github.io/spaceapps-CUU.github.io",
+  "private": false,
+  "homepage": "https://spaceapps-CUU.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
