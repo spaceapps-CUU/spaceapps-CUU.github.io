@@ -1,0 +1,53 @@
+@import url(../defaultStyles.css);
+
+.topbar {
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    width: 100%;
+    font-size: large;
+    position: sticky;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    font-family: var(--font);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.103);
+}
+
+.tabs {
+    display: flex;
+    margin-left: auto;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.tab {
+    cursor: pointer;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.tabText {
+    margin-top: 27px;
+}
+
+.innerAnimation {
+    position: relative;
+    height: 5%;
+    width: 0px;
+    top: 0%;
+    left: 50%;
+    background-color: orangered;
+    transition: 0.2s;
+}
+
+.tab:hover>.innerAnimation {
+    left: 0;
+    width: 100%;
+}
+
+.image-topBar {
+    padding: 2px 0 5px 10px;
+}

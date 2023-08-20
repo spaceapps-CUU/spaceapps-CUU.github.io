@@ -1,0 +1,43 @@
+@import url(../../defaultStyles.css);
+
+.despegarSection {
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+}
+
+.texto {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    left: 25vw;
+    top: 25vh;
+}
+
+.despegue {
+    width: 100%;
+    top: 0;
+    position: absolute;
+    margin-top: 0;
+    font-weight: bolder;
+    font-size: 10vw;
+    color: var(--spaceBlue);
+}
+
+.inminente {
+    width: 100%;
+    top: 9vw;
+    position: absolute;
+    font-size: 9.5vw;
+    font-weight: normal;
+    color: orangered;
+}
+
+.invitacion {
+    width: 100%;
+    top: 20vw;
+    position: absolute;
+    font-size: 2.5vw;
+    font-weight: normal;
+    color: black;
+}
