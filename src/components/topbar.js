@@ -10,6 +10,11 @@ const tabs = [
 		key: 1,
 	},
 	{
+		text: "Ediciones",
+		route: "/fefef",
+		key: 2,
+	},
+	{
 		text: "¡Súmate!",
 		route: "/recruit",
 		key: 2,
