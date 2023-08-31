@@ -23,6 +23,7 @@
 }
 
 .lectura {
+    align-self: center;
     padding: 5%;
     overflow: hidden;
     width: 60%;
