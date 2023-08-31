@@ -1,35 +1,20 @@
 import React from "react";
 import { useState } from "react";
-import Quote from "./sections/quote";
-import Despegue from "./sections/despegue";
-import Parrafo from "./sections/parrafo";
+import Quote from "./landPageSections/quote";
+import Despegue from "./landPageSections/despegue";
+import Parrafo from "./landPageSections/parrafo";
+import Partners from "./landPageSections/partners";
 import "./mainPage.css";
-import { textos, titulos } from "./sections/textos";
-import { imagenes } from "../images/imagenes";
+import { parrafos } from "./landPageSections/textos";
 
 export default function MainPage() {
 	return (
 		<div className='mainPage'>
 			<Despegue />
-			<Parrafo
-				alignText={"right"}
-				text={textos.esMomentoDeAbordar}
-				title={titulos.esMomentoDeAbordar}
-				image={imagenes.LogoCUU_Vertical}
-			/>
-			<Parrafo
-				alignText={"left"}
-				text={textos.queEsNasa}
-				title={titulos.queEsNasa}
-				image={imagenes.LogoNASA_Horizontal}
-			/>
-			<Parrafo
-				alignText={"right"}
-				text={textos.proyectosDestacados}
-				title={titulos.proyectosDestacados}
-				image={imagenes.Computadora_Cohete}
-			/>
-
+			<Parrafo mostrar={parrafos.esMomentoDeAbordar} />
+			<Parrafo mostrar={parrafos.queEsNasa} />
+			<Parrafo mostrar={parrafos.proyectosDestacados} />
+			<Partners mostrar={parrafos.partnersCUU} />
 			<Quote />
 		</div>
 	);

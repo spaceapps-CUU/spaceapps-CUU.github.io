@@ -1,0 +1,115 @@
+.parrafoSection {
+    width: 100%;
+    display: flex;
+    min-height: calc(100vh - 75px);
+    height: auto;
+}
+
+.parrafoSection * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.parrafoSection h2 {
+    margin-bottom: 1%;
+    color: orangered;
+    font-size: 3vw;
+}
+
+.parrafoSection p {
+    text-align: justify;
+    font-size: 1.4vw;
+    font-weight: lighter;
+}
+
+.lectura {
+    padding: 5%;
+    overflow: hidden;
+    width: 60%;
+}
+
+.imagen {
+    align-self: center;
+    width: 40%;
+    max-height: 70vh;
+}
+
+.lecturaPartner {
+    padding: 5%;
+    padding-bottom: 1%;
+    overflow: hidden;
+}
+
+.lecturaPartner h2 {
+    margin-bottom: 1%;
+}
+
+.partnersImages {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    padding-bottom: 20px;
+}
+
+.partnerBlock {
+    background-color: lightblue;
+    border-radius: 5vw;
+    display: flex;
+    height: 25vw;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partnerImage {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 95%;
+    max-width: 95%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .parrafoSection {
+        margin: 0;
+        display: block;
+        height: auto;
+    }
+
+    .imagen {
+        max-height: 50vh;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .parrafoSection h2 {
+        font-size: 8vw;
+    }
+
+    .parrafoSection p {
+        font-size: 4.5vw;
+        font-weight: normal;
+    }
+
+    .lectura {
+        padding: 7%;
+        width: auto;
+    }
+
+    .partnersImages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partnerBlock {
+        background-color: lightblue;
+        border-radius: 20%;
+        height: 43vw;
+        width: 43vw;
+    }
+}

@@ -41,3 +41,32 @@
     font-weight: normal;
     text-shadow: none;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .quoteSection {
+        display: block;
+    }
+
+    .theQuote {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        display: inline-flex;
+        align-self: center;
+    }
+
+    .theImage {
+        width: 100%;
+    }
+
+    .quoteMain {
+        font-size: 5vw;
+    }
+
+    .atte {
+        font-size: 4vw;
+    }
+}

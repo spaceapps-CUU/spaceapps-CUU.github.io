@@ -11,9 +11,7 @@ export default function Despegue() {
 				<br />
 				<div className='invitacion'>¡CHIHUAHUA TE NECESITA!</div>
 			</div>
-			<div className='floatingIcons'>
-				<div className='icon'></div>
-			</div>
+			<div className='floatingIcons'></div>
 		</div>
 	);
 }

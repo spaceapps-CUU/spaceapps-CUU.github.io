@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./topbar.css";
 import logoSpaceApps from "../images/LogoCUU_Horizontal.svg";
@@ -17,40 +17,88 @@ const tabs = [
 	{
 		text: "¡Súmate!",
 		route: "/recruit",
-		key: 2,
+		key: 3,
 	},
 	{
 		text: "Partners",
 		route: "/partners",
-		key: 3,
+		key: 4,
 	},
 	{
 		text: "FAQs",
 		route: "/faqs",
-		key: 4,
+		key: 5,
 	},
 	{
 		text: "Equipo y Contacto",
 		route: "/contact",
-		key: 5,
+		key: 6,
 	},
 ];
 
 export default function Topbar() {
+	const [showVTabs, setTabs] = useState("");
+	const [topbarSize, setTopbarSize] = useState("80px");
+	const [showBar, setShowBar] = useState("lightgrey");
+	function handleTabs() {
+		if (topbarSize === "80px") {
+			setTopbarSize("500px");
+			setShowBar("white");
+		} else {
+			setTopbarSize("80px");
+			setShowBar("lightgrey");
+		}
+	}
+
+	function handleTabsClick(tabIdKey) {
+		console.log("topBar tab " + tabIdKey + " clicked");
+		try {
+		} catch (error) {
+			console.log(error);
+		}
+	}
+
 	return (
-		<div className='topbar'>
-			<img
-				className='image-topBar'
-				src={logoSpaceApps}
-				alt='Space Apps CUU Logo'
-			/>
-			<div className='tabs'>
+		<div className='topbar' style={{ height: topbarSize }}>
+			<div className='imageDiv'>
+				<img
+					className='image-topBar'
+					src={logoSpaceApps}
+					alt='Space Apps CUU Logo'
+				/>
+			</div>
+			<div className='tabsHorizontal'>
 				{tabs.map((tab) => (
-					<div className='tab'>
+					<div
+						className='tab'
+						id={tab.key}
+						onClick={() => handleTabsClick(tab.key)}
+					>
 						<div className='tabText'>{tab.text}</div>
-						<div className='innerAnimation' />
+						<div className='innerAnimation' id={tab.key} />
 					</div>
 				))}
+			</div>
+			<div className='tabsVertical'>
+				<div className='tabsButton' onClick={handleTabs}>
+					<div
+						className='selectBtabs topBar'
+						style={{ backgroundColor: showBar }}
+					/>
+					<div className='selectBtabs' />
+					<div className='selectBtabs' style={{ backgroundColor: showBar }} />
+				</div>
+				<div className='tabsRow'>
+					{tabs.map((tab) => (
+						<div
+							className='tab'
+							id={tab.key}
+							onClick={() => handleTabsClick(tab.key)}
+						>
+							<p>{tab.text}</p>
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 	);
