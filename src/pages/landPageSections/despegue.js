@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./despegue.css";
 
 export default function Despegue() {
 	const icon = [1, 2, 3, 4, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-
 	return (
 		<div className='despegarSection'>
 			<div className='texto'>
@@ -72,7 +71,7 @@ const cssStyles = function (tipo) {
 		};
 	} else if (tipo == 4) {
 		return {
-			borderRadius: Math.floor(Math.random() * 1.9) * 100 + "%",
+			borderRadius: Math.random() >= 0.5 ? "20%" : "100%",
 			border: "5px solid " + color[Math.floor(Math.random() * color.length)],
 			margin: "1px",
 			height: "9px",
