@@ -1,0 +1,51 @@
+.miembrosGrid {
+    background-color: #dcdcdc;
+    background-image: url("../images/staff\ texture.svg");
+    background-size: 250px;
+    width: 100%;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    row-gap: 20px;
+    padding-bottom: 110px;
+}
+
+.miembroSAComponente {
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 300px;
+}
+
+.miembroFondo {
+    position: relative;
+    top: 30%;
+    height: 70%;
+    background-image: linear-gradient(#0042A6, #07173F);
+    width: 100%;
+    border-radius: 15px;
+}
+
+.miembroNombre {
+    position: relative;
+    top: 110px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.miembroImagenPerfil {
+    position: relative;
+    left: 0;
+    top: -278px;
+    z-index: 800;
+    border-radius: 100%;
+    border: 10px solid #ffffff;
+}

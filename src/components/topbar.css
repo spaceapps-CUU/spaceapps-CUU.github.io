@@ -1,0 +1,135 @@
+.topbar {
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    width: 100%;
+    font-size: large;
+    position: sticky;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.103);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.tabsHorizontal {
+    display: flex;
+    margin-left: auto;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.tabsVertical {
+    display: none;
+}
+
+.tab {
+    cursor: pointer;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.tabText {
+    margin-top: 27px;
+}
+
+.innerAnimation {
+    position: relative;
+    height: 5%;
+    width: 0px;
+    top: 0%;
+    left: 50%;
+    background-color: orangered;
+    transition: 0.2s;
+}
+
+.tab:hover>.innerAnimation {
+    left: 0;
+    width: 100%;
+}
+
+.image-topBar {
+    padding: 2px 0 5px 10px;
+    height: 100%;
+}
+
+.imageDiv {
+    height: 70px;
+    width: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    .image-topBar {
+        padding-left: 7px;
+        height: 70px;
+        width: calc(50vw - 7px);
+    }
+
+    .tabsHorizontal {
+        display: none;
+    }
+
+    .imageDiv {
+        width: 50vw;
+    }
+
+    .tabsVertical {
+        width: 100vw;
+        display: block;
+        margin-left: -50vw;
+    }
+
+    .tabsButton {
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: 11px;
+        margin-top: 14px;
+        margin-bottom: 30px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .selectBtabs {
+        transition: 0.3s;
+        background-color: lightgray;
+        margin: 5px;
+        height: 5px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .topBar {
+        margin-top: 13px;
+    }
+
+    .tabsRow {
+        display: block;
+    }
+
+    .tab {
+        border-radius: 10px;
+        border: 1px solid lightsalmon;
+        height: 50px;
+        width: 90%;
+        background-color: aliceblue;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .tab>p {
+        padding: 0%;
+        margin: 13px;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+    .topbar {
+        height: 80px !important;
+    }
+}

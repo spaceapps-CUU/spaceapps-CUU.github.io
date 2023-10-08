@@ -1,0 +1,147 @@
+.despegarSection {
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.texto {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    left: 25vw;
+    top: 25vh;
+}
+
+.despegue {
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 10vw;
+    color: #07173F;
+    text-align: center;
+    animation-name: growText;
+    animation-duration: 1s;
+}
+
+.inminente {
+    z-index: 99;
+    width: 100%;
+    top: 9vw;
+    position: absolute;
+    font-size: 9.5vw;
+    font-weight: normal;
+    color: orangered;
+    text-align: center;
+    animation-name: growText;
+    animation-duration: 1s;
+
+}
+
+.invitacion {
+    z-index: 98;
+    width: 100%;
+    top: 20vw;
+    position: absolute;
+    font-size: 2.5vw;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    animation-name: growText;
+    animation-duration: 1s;
+
+}
+
+.iconito {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+    .texto {
+        position: absolute;
+        width: 90vw;
+        height: 25vh;
+        left: 5vw;
+        top: 33vh;
+    }
+
+    .despegue {
+        width: 100%;
+        top: 0;
+        position: absolute;
+        font-weight: bolder;
+        font-size: 18vw;
+        color: #07173F;
+        text-align: center;
+    }
+
+    .inminente {
+        width: 100%;
+        top: 16vw;
+        position: absolute;
+        font-size: 17vw;
+        font-weight: normal;
+        color: orangered;
+        text-align: center;
+    }
+
+    .invitacion {
+        width: 100%;
+        top: 33.5vw;
+        position: absolute;
+        font-size: 6vw;
+        font-weight: normal;
+        color: black;
+        text-align: center;
+    }
+}
+
+.orbit {
+    position: absolute;
+    animation-name: growOrbit;
+    animation-duration: 2s;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+@keyframes spin-icon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes growOrbit {
+    from {
+        height: 1%;
+        width: 1%;
+        left: 50vw;
+        top: 50vh;
+    }
+
+    to {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes growText {
+    from {
+        font-size: 0.1vw;
+        top: 100vh;
+
+    }
+
+    to {}
+}

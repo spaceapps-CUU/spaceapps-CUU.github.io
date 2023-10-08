@@ -1,0 +1,72 @@
+.quoteSection {
+    width: 100%;
+    height: auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    background-color: rgba(198, 198, 198, 0.277);
+}
+
+.theQuote {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: inline-flex;
+    align-self: center;
+}
+
+.theImage {
+    width: 50%;
+}
+
+.quoteMain {
+    width: 100%;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    text-shadow: 0.2vw 0.2vw 0.3vw rgba(0, 0, 0, 0.179);
+}
+
+.innerQuote {
+    color: orangered;
+}
+
+.atte {
+    cursor: default;
+    padding: 5%;
+    font-size: 1.5vw;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .quoteSection {
+        display: block;
+    }
+
+    .theQuote {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        display: inline-flex;
+        align-self: center;
+    }
+
+    .theImage {
+        width: 100%;
+    }
+
+    .quoteMain {
+        font-size: 5vw;
+    }
+
+    .atte {
+        font-size: 4vw;
+    }
+}
