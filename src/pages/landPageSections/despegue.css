@@ -22,6 +22,8 @@
     font-size: 10vw;
     color: #07173F;
     text-align: center;
+    animation-name: growText;
+    animation-duration: 1s;
 }
 
 .inminente {
@@ -33,6 +35,9 @@
     font-weight: normal;
     color: orangered;
     text-align: center;
+    animation-name: growText;
+    animation-duration: 1s;
+
 }
 
 .invitacion {
@@ -44,6 +49,9 @@
     font-weight: normal;
     color: black;
     text-align: center;
+    animation-name: growText;
+    animation-duration: 1s;
+
 }
 
 .iconito {
@@ -92,6 +100,15 @@
     }
 }
 
+.orbit {
+    position: absolute;
+    animation-name: growOrbit;
+    animation-duration: 2s;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
 
 @keyframes spin-icon {
     from {
@@ -101,4 +118,30 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+@keyframes growOrbit {
+    from {
+        height: 1%;
+        width: 1%;
+        left: 50vw;
+        top: 50vh;
+    }
+
+    to {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes growText {
+    from {
+        font-size: 0.1vw;
+        top: 100vh;
+
+    }
+
+    to {}
 }

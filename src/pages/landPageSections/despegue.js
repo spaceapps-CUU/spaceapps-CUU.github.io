@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./despegue.css";
 
 export default function Despegue() {
-	const icon = [1, 2, 3, 4, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+	const icon = [
+		1, 2, 3, 4, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 4, 5, 1, 1,
+		1, 1, 1, 1, 1, 2, 3, 4, 5, 1, 1,
+	];
 	return (
 		<div className='despegarSection'>
 			<div className='texto'>
@@ -14,7 +17,11 @@ export default function Despegue() {
 			</div>
 			<div className='floatingIcons'>
 				{icon.map((icono) => {
-					return <div style={cssStyles(1)}>{divIcon(Math.random() * 5)}</div>;
+					return (
+						<div className='orbit'>
+							<div style={cssStyles(1)}>{divIcon(Math.random() * 5)}</div>
+						</div>
+					);
 				})}
 			</div>
 		</div>
@@ -48,10 +55,7 @@ const cssStyles = function (tipo) {
 	if (tipo == 1) {
 		return {
 			height: "100%",
-			width: "98%",
-			position: "absolute",
-			left: "0",
-			top: "0",
+			width: "100%",
 			animation: "spin-icon infinite " + speed1 + "s linear",
 		};
 	} else if (tipo == 2) {

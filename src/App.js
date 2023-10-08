@@ -1,48 +1,21 @@
-import logo from "./logo.svg";
-import { useEffect, useRef } from "react";
-import "./App.css";
+import React, { useState } from "react";
+import "./index.css";
 import Topbar from "./components/topbar";
 import MainPage from "./pages/mainPage";
+import Miembros from "./components/miembros";
 
 function App() {
-	useEffect(() => {
-		scrollTo(refQueEsSpaceApps);
-	}, []);
-	let refQueEsSpaceApps = useRef();
-	const handleTabsClick = (tabIdKey) => {
-		switch (tabIdKey) {
-			case 1:
-				console.log("AAAAAAAAAAAAAAAAAA");
-				scrollTo(refQueEsSpaceApps);
-				break;
-
-			default:
-				break;
-		}
-	};
-	function scrollTo(ref) {
-		if (!ref.current) return;
-		ref.current.scrollIntoView({ behavior: "smooth" });
+	const [showPage, getShowPage] = useState(0);
+	function updatePageTab(tabToRender) {
+		getShowPage(tabToRender);
+		window.scroll(0, 0);
 	}
+	var verdad = false;
 	return (
-		<div className='App'>
-			<Topbar />
-			<MainPage />
-			<header className='App-header'>
-				<img src={logo} className='App-logo' alt='logo' />
-				<p>Si se pudo banda :D Ahora google es nuestro</p>
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className='App-link'
-					href='https://reactjs.org'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					Learn React
-				</a>
-			</header>
+		<div className='Supah'>
+			<Topbar onTabChange={updatePageTab} />
+			{showPage == 1 && <MainPage />}
+			{showPage == 2 && <Miembros />}
 		</div>
 	);
 }

@@ -10,7 +10,7 @@ const tabs = [
 		key: 1,
 	},
 	{
-		text: "Ediciones",
+		text: "Staff",
 		route: "/fefef",
 		key: 2,
 	},
@@ -36,7 +36,7 @@ const tabs = [
 	},
 ];
 
-export default function Topbar() {
+export default function Topbar(props) {
 	const [showVTabs, setTabs] = useState("");
 	const [topbarSize, setTopbarSize] = useState("80px");
 	const [showBar, setShowBar] = useState("lightgrey");
@@ -52,6 +52,7 @@ export default function Topbar() {
 
 	function handleTabsClick(tabIdKey) {
 		console.log("topBar tab " + tabIdKey + " clicked");
+		props.onTabChange(tabIdKey);
 		try {
 		} catch (error) {
 			console.log(error);
